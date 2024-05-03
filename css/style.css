@@ -1,13 +1,13 @@
 :root {
-  --primaio: #9c27b0;
-  --primarioOScuro: #891190;
-  --secundario: #ffce00;
-  --secundarioOScuro: rgb(233 287 2);
-  --blanco: #fff;
-  --negro: #000;
-
-  --fuentePrincipal: "Poppins", sans-serif;
-}
+    --primario: #007BFF; /* Azul Cibernético para botones y enlaces */
+    --primarioOscuro: #37474F; /* Gris Oscuro para textos auxiliares */
+    --secundario: #e9e93e; /* Verde Tecnológico para llamadas a la acción */
+    --secundarioOscuro: #FF9800; /* Naranja Energético para precios y promociones */
+    --blanco: #FFFFFF; /* Blanco para el fondo de la página */
+    --negro: #000000; /* Negro para el texto principal */
+    --fuentePrincipal: "Poppins", sans-serif; /* Fuente principal para mantener coherencia visual */
+  }
+  
 
 html {
   box-sizing: border-box;
@@ -21,7 +21,7 @@ html {
 
 /*globals*/
 body{
-    background-color: var(--primaio);
+    background-color: var(--primario);
     font-size: 1.6rem;
     line-height: 1.5;
     font-family: var(--fuentePrincipal);
@@ -37,7 +37,7 @@ a{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
 }
 
 .contenedor{
@@ -58,6 +58,33 @@ h2{
 }
 h3{
     font-size: 2.4rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo{
+    margin: 3rem 0;
+}
+
+.navegacion{
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.navegacion__enlace{
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover{
+    color: var(--secundario);
 }
 
 
