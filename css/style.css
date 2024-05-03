@@ -1,0 +1,10 @@
+:root{
+    --primaio: #9c27b0;
+    --primarioOScuro: #891190;
+    --secundario: #ffce00;
+    --secundarioOScuro: rgb(233 287 2);
+    --blanco: #fff;
+    --negro: #000;
+
+    --fuentePrincipal:  "Poppins", sans-serif;
+}
