@@ -8,3 +8,7 @@
 
     --fuentePrincipal:  "Poppins", sans-serif;
 }
+
+body{
+    background-color: var(--primaio);
+}
